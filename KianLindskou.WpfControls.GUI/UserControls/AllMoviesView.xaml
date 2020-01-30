@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="KianLindskou.WpfControls.GUI.UserControls.AllMoviesView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:KianLindskou.WpfControls.GUI.UserControls"
+             mc:Ignorable="d"
+             d:DesignHeight="800"
+             d:DesignWidth="600">
+   <Grid Margin="20">
+      <Grid.RowDefinitions>
+         <RowDefinition Height="1*" />
+         <RowDefinition Height="1*" />
+         <RowDefinition Height="6*" />
+         <RowDefinition Height="50" />
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+         <ColumnDefinition Width="2*" />
+         <ColumnDefinition Width="3*" />
+      </Grid.ColumnDefinitions>
+      <!--#region Cosmetic-->
+      <Rectangle Margin="0, 5"
+                 Grid.Row="0"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="2"
+                 Fill="White" />
+      <Rectangle Margin="0, 5"
+                 Grid.Row="1"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="2"
+                 Fill="White" />
+      <Rectangle Margin="0, 5"
+                 Grid.Row="2"
+                 Grid.Column="0"
+                 Grid.ColumnSpan="2"
+                 Fill="White" />
+      <!--#endregion-->
+      <!--#region Labels-->
+      <Label Grid.Row="0"
+             Grid.Column="0"
+             Content="Søg titel:"
+             FontSize="24"
+             HorizontalAlignment="Left"
+             VerticalAlignment="Center" />
+      <Label Grid.Row="1"
+             Grid.Column="0"
+             Content="Søg udgivelse:"
+             FontSize="24"
+             HorizontalAlignment="Left"
+             VerticalAlignment="Center" />
+      <!--#endregion-->
+      <!--#region Controls-->
+      <TextBox x:Name="titleSearchTextBox"
+               Grid.Row="0"
+               Grid.Column="2"
+               FontSize="16"
+               Margin="20"
+               Height="30" />
+      <Grid Grid.Row="1"
+            Grid.Column="1">
+         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+         </Grid.ColumnDefinitions>
+         <Label Content="Fra:"
+                VerticalAlignment="Center"
+                FontSize="16"/>
+         <DatePicker x:Name="fromDatePicker"
+                     Grid.Column="0"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Right"
+                     FontSize="16"
+                     Grid.RowSpan="2" />
+         <Label Grid.Column="1" Content="Fra:"
+                VerticalAlignment="Center"
+                FontSize="16" />
+         <DatePicker x:Name="toDatePicker"
+                     Grid.Column="1"
+                     VerticalAlignment="Center"
+                     HorizontalAlignment="Right"
+                     FontSize="16"
+                     Grid.RowSpan="2" />
+      </Grid>
+      <DataGrid x:Name="movieDataGrid"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="20"
+                AutoGenerateColumns="False">
+         <DataGrid.Columns>
+
+         </DataGrid.Columns>
+      </DataGrid>
+      <Button x:Name="editSelectedButton"
+              Grid.Row="3"
+              Grid.Column="1"
+              HorizontalAlignment="Right"
+              Margin="20, 10"
+              Content="Rediger valgte"
+              FontSize="16"
+              Width="200"
+              FontWeight="Bold" />
+      <!--#endregion-->
+   </Grid>
+</UserControl>
