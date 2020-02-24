@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KianLindskou.WpfControls.GU
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KianLindskou.WpfControls.BIZ", "KianLindskou.WpfControls.BIZ\KianLindskou.WpfControls.BIZ.csproj", "{600F0322-356E-43C6-AB7F-CBC23493ED98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KianLindskou.WpfControls.DB", "KianLindskou.WpfControls.DB\KianLindskou.WpfControls.DB.csproj", "{571CA2C9-E8B0-42CC-B84B-8FEB3ACCAB5E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KianLindskou.WpfControls.Entities", "KianLindskou.WpfControls.Entities\KianLindskou.WpfControls.Entities.csproj", "{1582A0CA-8F99-4FFE-883A-FCA9D00EAF26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KianLindskou.WpfControls.Repository", "KianLindskou.WpfControls.Repository\KianLindskou.WpfControls.Repository.csproj", "{05796680-77C6-4B66-9885-DBD80F068B01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KianLindskou.WpfControls.DAL", "KianLindskou.WpfControls.DAL\KianLindskou.WpfControls.DAL.csproj", "{B2FCEB03-F81E-4B19-8160-C561D4C1A1AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,14 +25,14 @@ Global
 		{600F0322-356E-43C6-AB7F-CBC23493ED98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{600F0322-356E-43C6-AB7F-CBC23493ED98}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{600F0322-356E-43C6-AB7F-CBC23493ED98}.Release|Any CPU.Build.0 = Release|Any CPU
-		{571CA2C9-E8B0-42CC-B84B-8FEB3ACCAB5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{571CA2C9-E8B0-42CC-B84B-8FEB3ACCAB5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{571CA2C9-E8B0-42CC-B84B-8FEB3ACCAB5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{571CA2C9-E8B0-42CC-B84B-8FEB3ACCAB5E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{05796680-77C6-4B66-9885-DBD80F068B01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{05796680-77C6-4B66-9885-DBD80F068B01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{05796680-77C6-4B66-9885-DBD80F068B01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{05796680-77C6-4B66-9885-DBD80F068B01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1582A0CA-8F99-4FFE-883A-FCA9D00EAF26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1582A0CA-8F99-4FFE-883A-FCA9D00EAF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1582A0CA-8F99-4FFE-883A-FCA9D00EAF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1582A0CA-8F99-4FFE-883A-FCA9D00EAF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2FCEB03-F81E-4B19-8160-C561D4C1A1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2FCEB03-F81E-4B19-8160-C561D4C1A1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2FCEB03-F81E-4B19-8160-C561D4C1A1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2FCEB03-F81E-4B19-8160-C561D4C1A1AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

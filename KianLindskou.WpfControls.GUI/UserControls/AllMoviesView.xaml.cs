@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KianLindskou.WpfControls.BIZ;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,12 @@ namespace KianLindskou.WpfControls.GUI.UserControls
     /// </summary>
     public partial class AllMoviesView : UserControl
     {
+        private BIZZ biz = new BIZZ();
+
         public AllMoviesView()
         {
             InitializeComponent();
+            movieDataGrid.ItemsSource = biz.GetAllFilms();
         }
     }
 }

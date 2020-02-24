@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KianLindskou.WpfControls.DB")]
+[assembly: AssemblyTitle("KianLindskou.WpfControls.Entities")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KianLindskou.WpfControls.DB")]
+[assembly: AssemblyProduct("KianLindskou.WpfControls.Entities")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("571ca2c9-e8b0-42cc-b84b-8feb3accab5e")]
+[assembly: Guid("1582a0ca-8f99-4ffe-883a-fca9d00eaf26")]
 
 // Version information for an assembly consists of the following four values:
 //

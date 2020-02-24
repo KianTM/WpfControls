@@ -71,8 +71,9 @@
                      HorizontalAlignment="Right"
                      FontSize="16"
                      Grid.RowSpan="2" />
-         <Label Grid.Column="1" Content="Fra:"
-                VerticalAlignment="Center"
+         <Label Grid.Column="1"
+                   Content="Til:"
+                   VerticalAlignment="Center"
                 FontSize="16" />
          <DatePicker x:Name="toDatePicker"
                      Grid.Column="1"
@@ -86,7 +87,7 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
                 Margin="20"
-                AutoGenerateColumns="False">
+                AutoGenerateColumns="True">
          <DataGrid.Columns>
 
          </DataGrid.Columns>

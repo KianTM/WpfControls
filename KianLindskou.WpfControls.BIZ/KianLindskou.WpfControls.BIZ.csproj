@@ -41,17 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BIZZ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KianLindskou.WpfControls.DB\KianLindskou.WpfControls.DB.csproj">
-      <Project>{571ca2c9-e8b0-42cc-b84b-8feb3accab5e}</Project>
-      <Name>KianLindskou.WpfControls.DB</Name>
+    <ProjectReference Include="..\KianLindskou.WpfControls.DAL\KianLindskou.WpfControls.DAL.csproj">
+      <Project>{b2fceb03-f81e-4b19-8160-c561d4c1a1aa}</Project>
+      <Name>KianLindskou.WpfControls.DAL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\KianLindskou.WpfControls.Repository\KianLindskou.WpfControls.Repository.csproj">
-      <Project>{05796680-77c6-4b66-9885-dbd80f068b01}</Project>
-      <Name>KianLindskou.WpfControls.Repository</Name>
+    <ProjectReference Include="..\KianLindskou.WpfControls.Entities\KianLindskou.WpfControls.Entities.csproj">
+      <Project>{1582a0ca-8f99-4ffe-883a-fca9d00eaf26}</Project>
+      <Name>KianLindskou.WpfControls.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -113,6 +113,10 @@
       <Project>{600f0322-356e-43c6-ab7f-cbc23493ed98}</Project>
       <Name>KianLindskou.WpfControls.BIZ</Name>
     </ProjectReference>
+    <ProjectReference Include="..\KianLindskou.WpfControls.Entities\KianLindskou.WpfControls.Entities.csproj">
+      <Project>{1582a0ca-8f99-4ffe-883a-fca9d00eaf26}</Project>
+      <Name>KianLindskou.WpfControls.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

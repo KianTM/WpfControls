@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{571CA2C9-E8B0-42CC-B84B-8FEB3ACCAB5E}</ProjectGuid>
+    <ProjectGuid>{B2FCEB03-F81E-4B19-8160-C561D4C1A1AA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KianLindskou.WpfControls.DB</RootNamespace>
-    <AssemblyName>KianLindskou.WpfControls.DB</AssemblyName>
+    <RootNamespace>KianLindskou.WpfControls.DAL</RootNamespace>
+    <AssemblyName>KianLindskou.WpfControls.DAL</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,7 +31,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.0.30\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,14 +48,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\KianLindskou.WpfControls.Repository\KianLindskou.WpfControls.Repository.csproj">
-      <Project>{05796680-77c6-4b66-9885-dbd80f068b01}</Project>
-      <Name>KianLindskou.WpfControls.Repository</Name>
+    <ProjectReference Include="..\KianLindskou.WpfControls.Entities\KianLindskou.WpfControls.Entities.csproj">
+      <Project>{1582a0ca-8f99-4ffe-883a-fca9d00eaf26}</Project>
+      <Name>KianLindskou.WpfControls.Entities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\KianLindskou.WpfControls.GUI\App.config">
+      <Link>App.config</Link>
+    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
